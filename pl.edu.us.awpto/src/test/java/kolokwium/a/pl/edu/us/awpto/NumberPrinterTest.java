@@ -11,8 +11,18 @@ public class NumberPrinterTest
 	{
 		NumberPrinter obj = new NumberPrinter();
 		
-		obj.printNumbers(-7);
+		try{
+	        this.obj.printNumbers(-1);                  
+	        fail();
+	    }
+	    catch(IllegalArgumentException iae){
+	        return;
+	        }
+	    fail();
+		
 	}
+	
+	
 	
 	
 }
